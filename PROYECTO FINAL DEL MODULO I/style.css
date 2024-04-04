@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+
+.center {
+    padding: 20px;
+    padding-right: 40px;
+    flex-grow: 1;
+}
+
+.center .buscador{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #F1F1F1;
+    border: none;
+    padding: 12px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center .buscador .icono-busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center .input-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.center input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center input:focus {
+    outline: none;
+}
+
+/* left, logo y menu */
+
+.left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 25px;
+}
+
+.left a {
+    padding: 10px 14px;
+    border-radius: 25px;
+    margin: 0 1px;
+    color: black;
+    text-decoration: none;
+}
+
+.left .highlight {
+    background-color: #000;
+    color: #fff;
+}
+
+.left .logo {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+/* right, sub menu */
+
+.right a {
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #767676;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right a:hover {
+    background-color: #F1F1F1;
+}
+
+.right img {
+    border-radius: 100%;
+}
+
+/*el diseno del main*/
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    padding-top: 110px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column .card {
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    transition: 0.2s ease;
+}
+
+.column .card img {
+    width: 250px;
+}
+
+.column .card img:hover{
+    opacity: 0.7;
+    z-index: 0;
+    transition: 0.2s ease;
+}
+
+.main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
